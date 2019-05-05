@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Music Player</string>
+    <string name="desc_playlist">Playlists</string>
+    <string name="desc_favorite">Favorites</string>
+    <string name="desc_artists">Artists</string>
+    <string name="desc_songs">Songs</string>
+    <string name="song_name">Song name</string>
+    <string name="artist_name">Artist</string>
+    <string name="favorites_title">Favorites</string>
+    <string name="artists_title">Artists</string>
+    <string name="playlists_title">Playlists</string>
+    <string name="playlist_name">playlist name</string>
+    <string name="playlist_count">count</string>
+    <string name="play_pause">play_pause</string>
+    <string name="settings">settings</string>
+    <string name="search">search</string>
+    <string name="sync">sync</string>
+    <string name="next">next</string>
+    <string name="previous">previous</string>
+</resources>

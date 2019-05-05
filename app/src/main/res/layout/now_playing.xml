@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/red800">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/song_cover"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:src="@drawable/alizee" />
+
+    <RelativeLayout
+        android:id="@+id/toolbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:id="@+id/song_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:text="@string/desc_songs"
+            android:textColor="@android:color/background_light"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/song_artist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/song_title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:text="@string/artist_name"
+            android:textColor="@android:color/background_light"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="30dp" />
+
+        <ImageView
+            android:id="@+id/play_pause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/seekBar"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            app:srcCompat="@drawable/play_large"
+            android:contentDescription="@string/play_pause" />
+
+        <ImageView
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="false"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/play_pause"
+            app:srcCompat="@drawable/ic_next"
+            android:layout_alignParentEnd="false"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/play_pause"
+            android:contentDescription="@string/next" />
+
+        <ImageView
+            android:id="@+id/previous"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/play_pause"
+            app:srcCompat="@drawable/ic_previous"
+            android:layout_marginEnd="10dp"
+            android:layout_toStartOf="@+id/play_pause"
+            android:contentDescription="@string/previous" />
+
+    </RelativeLayout>
+</RelativeLayout>
